@@ -33,7 +33,6 @@ public class Room2 {
         else if(userInputStayOrGo == 2){
             // If They return to the main fork in the road
             System.out.println("You have decided you will revisit the hospital later and head back to the main fork.");
-           StartGame.displayStartGame(0);
 
 
         }

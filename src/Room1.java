@@ -9,6 +9,7 @@ public class Room1 {
        Random rand = new Random();
 
        int userChoice;
+       int enamyHp = 5;
        int userHp = 15;
        int rand_pickAttack = rand.nextInt(5) + 1;
        int rand_pickDamage = rand.nextInt(5) + 1;
@@ -28,6 +29,7 @@ public class Room1 {
            System.out.println("The scratch did " + rand_pickDamage + " damage to you, you must protect yourself.");
            userHp = userHp - rand_pickDamage;
            System.out.println("YOU HEALTH IS NOW AT " + userHp + ".");
+           System.out.println("THE MONSTERS HEALTH IS NOW AT " + enamyHp +".");
        }
        // This is what happens when if the user doesn't want to pick up the pipe
        else if (userChoice == 2){

@@ -11,6 +11,7 @@ public class Main {
         int quitChoice = 999;
 
         do {
+            // The Intro to the game when you first start
             System.out.println("You wake up in a dark room, You get up and start to walk towards the door that is cracked open...");
             System.out.println("The sun hits your eyes and you can't see, after your eyes adjust to the light you start down the street.");
             System.out.println("Up a head you see an intersection now you have to choose with direction you want to go.");
@@ -18,21 +19,25 @@ public class Main {
             Graphics.defaultStart();
             roomChoice = input.nextInt();
 
+            // The first path
             if (roomChoice == 1) {
                 System.out.println("You started to walk down the right path.");
                 Graphics.directionRight();
                 Room1.storyForRoomOne();
             }
+            // The second path
             else if (roomChoice == 2) {
                 System.out.println("You started to walk straight down the path.");
                 Graphics.directionStraight();
 
             }
+            // The Third Path
             else if (roomChoice == 3) {
                 System.out.println("You start to walk down the left path.");
                 Graphics.directionLeft();
             }
 
+            // Enter this to exit the game
         }while (quitChoice != 999);
 
     }

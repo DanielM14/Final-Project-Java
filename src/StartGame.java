@@ -23,11 +23,13 @@ public class StartGame {
         else if (roomChoice == 2) {
             System.out.println("You started to walk straight down the path.");
             Graphics.directionStraight();
+            Room2.storyForRoom2();
 
         }
         else if (roomChoice == 3) {
             System.out.println("You start to walk down the left path.");
             Graphics.directionLeft();
+            Room3.StoryForRoom3();
         }
     }
 

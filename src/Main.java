@@ -1,3 +1,4 @@
+import java.util.Random;
 import java.util.Scanner;
 
 
@@ -11,8 +12,12 @@ public class Main {
         int quitChoice = 999;
         int mainForkCounter = 0;
 
+        Scanner input = new Scanner(System.in);
+        // Loop for the game to keep going until player enters 999
         do {
 
+            System.out.println("If you want to quit at anytime please enter 999");
+            quitChoice = input.nextInt();
             StartGame.displayStartGame(mainForkCounter);
 
 
